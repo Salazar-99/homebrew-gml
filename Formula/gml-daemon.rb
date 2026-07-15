@@ -1,19 +1,19 @@
 class GmlDaemon < Formula
   desc "Background daemon for the gml GPU machine management CLI"
   homepage "https://salazar-99.github.io/gml/"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Salazar-99/gml/releases/download/v0.1.0/gml-daemon-aarch64-apple-darwin.tar.xz"
-    sha256 "7a76ab40d5ea97334d606e82af7fdfc0c32288bb757464af8badb5dd02db56e3"
+    url "https://github.com/Salazar-99/gml/releases/download/v0.2.0/gml-daemon-aarch64-apple-darwin.tar.xz"
+    sha256 "0ebdc88bff29640986eba7355b854d092f2da6ef433717b41e09742a07fca1df"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Salazar-99/gml/releases/download/v0.1.0/gml-daemon-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5318b21b32c6e11b20f59a7104aad7b2086bcace2c1893154c416c7eb03643e4"
+      url "https://github.com/Salazar-99/gml/releases/download/v0.2.0/gml-daemon-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1c6b8b8f139c7d4c8f803c1b8ae20f8e05cbbbe54bb1d1f26004a0868447727a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Salazar-99/gml/releases/download/v0.1.0/gml-daemon-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "08f5686d04e1b8f290d38e09e76bb1f2396274f70c883007bd957ced906612a3"
+      url "https://github.com/Salazar-99/gml/releases/download/v0.2.0/gml-daemon-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "29cc76e0eed515124b6a955261dde2698c6f2d6956b898e97ea28965681e43eb"
     end
   end
 
