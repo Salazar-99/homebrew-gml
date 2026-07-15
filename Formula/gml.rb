@@ -1,19 +1,19 @@
 class Gml < Formula
   desc "CLI for provisioning and managing GPU machines across cloud providers"
   homepage "https://salazar-99.github.io/gml/"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Salazar-99/gml/releases/download/v0.1.0/gml-aarch64-apple-darwin.tar.xz"
-    sha256 "b940f37dd7fb776a17c210a97f453b196a0cb89282be55b949d55e68a984d6dc"
+    url "https://github.com/Salazar-99/gml/releases/download/v0.2.0/gml-aarch64-apple-darwin.tar.xz"
+    sha256 "df1321bc9318f5e03ae591727d8082f9c04b077aa0f8b0ef877a41c8b0eb1908"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Salazar-99/gml/releases/download/v0.1.0/gml-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "308443ddecefc6e4950f3d656e0385463dad4768eb6655301b9794c838caed35"
+      url "https://github.com/Salazar-99/gml/releases/download/v0.2.0/gml-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "38845895870d9723e5223c15c3ab81467abc4fa0b969043f3450262f0436c218"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Salazar-99/gml/releases/download/v0.1.0/gml-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a83a8fc3c90175808d8ce6ded079e9458e67c2ce087e106331dce7f6663f00b0"
+      url "https://github.com/Salazar-99/gml/releases/download/v0.2.0/gml-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a533b6e2a2ee40567bd56c722526bc12a195a38ca9da0e83d520733c682b0fb7"
     end
   end
 
